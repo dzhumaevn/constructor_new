@@ -23,9 +23,9 @@ const App = (props) => {
       <NavLink to='/' exact>Главная</NavLink>
       { props.hasComponents ? <NavLink to='/rendered-content' exact> Отрисованные</NavLink> : null }
       <div id='app'>
-        <Route path='/data-input' exact component={ SportEventsFormContainer } />
-        <Route path='/rendered-content' component={ StageComponentContainer } />
-        <Route path='/' exact component={ SportEventsFormContainer } />
+        <Route path={ process.env.PUBLIC_URL + '/data-input' } exact component={ SportEventsFormContainer } />
+        <Route path={ process.env.PUBLIC_URL + '/rendered-content' } component={ StageComponentContainer } />
+        <Route path={ process.env.PUBLIC_URL + '/' } exact component={ SportEventsFormContainer } />
       </div>
     </>
   );

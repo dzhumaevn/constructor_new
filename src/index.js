@@ -10,7 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store }>
-      <BrowserRouter basename='https://dzhumaevn.github.io/constructor_new/build/'>
+      <BrowserRouter>
         <AppContainer />
       </BrowserRouter>
     </Provider>
