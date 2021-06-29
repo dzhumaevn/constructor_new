@@ -1,6 +1,7 @@
 {
   "name": "top-stories-new",
   "version": "0.1.0",
+  "homepage": "https://dzhumaevn.github.io/constructor_new/build",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
