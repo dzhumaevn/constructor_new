@@ -10,7 +10,7 @@ const App = (props) => {
 
   useEffect(() => {
     if ( props.hasComponents ) {
-      history.push('/rendered-content');
+      history.push(process.env.PUBLIC_URL + '/rendered-content');
     }
   });
 
@@ -20,8 +20,9 @@ const App = (props) => {
 
   return (
     <>
-      <NavLink to='/' exact>Главная</NavLink>
-      { props.hasComponents ? <NavLink to='/rendered-content' exact> Отрисованные</NavLink> : null }
+      <NavLink to={ process.env.PUBLIC_URL + '/' } exact>Главная</NavLink>
+      { props.hasComponents ?
+        <NavLink to={ process.env.PUBLIC_URL + '/rendered-content' } exact> Отрисованные</NavLink> : null }
       <div id='app'>
         <Route path={ process.env.PUBLIC_URL + '/data-input' } exact component={ SportEventsFormContainer } />
         <Route path={ process.env.PUBLIC_URL + '/rendered-content' } component={ StageComponentContainer } />
