@@ -1,7 +1,6 @@
 import StageComponent from "./StageComponent";
 import { addStageActionCreator } from "../../redux/reducers/stageReducer/stageReducer";
-import { connect } from "react-redux";
-import { ReactReduxContext } from "react-redux";
+import { connect, ReactReduxContext } from "react-redux";
 import StageScaler from "./StageScaler";
 
 const mapStateToProps = ({ sportEvents }) => {

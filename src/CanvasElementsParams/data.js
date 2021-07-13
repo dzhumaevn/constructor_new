@@ -7,6 +7,7 @@ import hockeySportEquipment from "../images/sports_equipment/hockey_puck.svg";
 import basketbolSportEquipment from "../images/sports_equipment/basketball.svg";
 import boksSportEquipment from "../images/sports_equipment/boxgloves.svg";
 import che from '../images/euro_bg.jpg';
+import logoRpl from '../images/logo_rpl.svg';
 
 const STORIES_MAIN_WIDTH = 1125;
 const STORIES_MAIN_HEIGHT = 2436;
@@ -49,7 +50,7 @@ const data = {
       severalMatches: {
         commonDecor: {
           'default': {
-            bgImage: {url: ls, width: 1125, height: 1100, x: 0, y: 0},
+            bgImage: { url: ls, width: 1125, height: 1100, x: 0, y: 0 },
             rect: { fill: '#2C2C2C', opacity: 1, width: 1062, height: 160, x: 31 },
             dash: { fill: '#FFFFFF', opacity: 1, width: 48, height: 10, x: 536 }
           },
@@ -59,17 +60,17 @@ const data = {
             dash: { fill: '#55FFF2', opacity: 0.85, width: 48, height: 10, x: 536 }
           },
           'liga-evropy': {
-            bgImage: {url: le, width: 1125, height: 1100, x: 0, y: 0},
+            bgImage: { url: le, width: 1125, height: 1100, x: 0, y: 0 },
             rect: { fill: '#2C2C2C', opacity: 1, width: 1062, height: 160, x: 31 },
             dash: { fill: '#F29B00', opacity: 1, width: 48, height: 10, x: 536 }
           },
           'seriya-a': {
-            bgImage: {url: seria_a, width: 1125, height: 1100, x: 0, y: 0},
+            bgImage: { url: seria_a, width: 1125, height: 1100, x: 0, y: 0 },
             rect: { fill: '#0E3C9A', opacity: 0.8, width: 1062, height: 160, x: 31 },
             dash: { fill: '#FFFFFF', opacity: 0.8, width: 48, height: 10, x: 536 }
           },
           'chempionat-evropy-po-futbolu': {
-            bgImage: {url: che, width: 1125, height: 1100, x: 0, y: 0},
+            bgImage: { url: che, width: 1125, height: 1100, x: 0, y: 0 },
             rect: { fill: '#066d4b', opacity: 0.8, width: 1062, height: 160, x: 31 },
             dash: { fill: '#0ca995', opacity: 0.8, width: 48, height: 10, x: 536 }
           },
@@ -118,7 +119,6 @@ const data = {
           { rect: { y: 360, }, dash: { y: 435, } },
         ]
       }
-      ,
     },
     lineOnCenter: {
       default: { fill: '#ffffff', width: STORIES_MAIN_WIDTH, height: 90, y: 1100, x: 0 },
@@ -136,18 +136,27 @@ const data = {
     },
     startDate: {
       fontSize: 120, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 1380, x: 85, width: 800, textAlign: 'left',
+      y: 1380, x: 85, width: 750, textAlign: 'left',
     },
     startTime: {
       fontSize: 120, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 1520, x: 85, width: 800, textAlign: 'left',
+      y: 1520, x: 85, width: 750, textAlign: 'left',
     },
     tournament: {
       default: {
         fontSize: 90, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
         y: 1690, x: 85, width: 900, textAlign: 'left',
       },
-      rpl: {},
+      rpl: {
+        fontSize: 90,
+        fontFamily: 'FirsNeueRegular',
+        fill: '#ffffff',
+        y: 1740,
+        x: 385,
+        width: 750,
+        textAlign: 'left',
+        logoRpl: { url: logoRpl, y: 1690, x: 85, width: 250, height: 250 }
+      },
     }
   },
   marketingtv: {
@@ -269,18 +278,27 @@ const data = {
     },
     startDate: {
       fontSize: 100, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 840, x: 85, width: 1400, textAlign: 'left',
+      y: 810, x: 85, width: 1400, textAlign: 'left',
     },
     startTime: {
       fontSize: 120, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 1520, x: 85, width: 800, textAlign: 'left',
+      y: 1420, x: 85, width: 800, textAlign: 'left',
     },
     tournament: {
       default: {
         fontSize: 90, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
         y: 950, x: 85, width: 1800, textAlign: 'left',
       },
-      rpl: {},
+      rpl: {
+        fontSize: 90,
+        fontFamily: 'FirsNeueRegular',
+        fill: '#ffffff',
+        y: 950,
+        x: 255,
+        width: 1800,
+        textAlign: 'left',
+        logoRpl: { url: logoRpl, y: 920, x: 85, width: 130, height: 130 }
+      },
     }
   },
 };

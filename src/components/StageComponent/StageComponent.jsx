@@ -12,27 +12,37 @@ const StageComponent = props => {
 
   useEffect(() => {
     props.dispatchStage(stage.current);
+    return () => KonvaNodeInteractiveMaker.resetInteractiveAllNodes();
   });
 
+  const makeInteractive = e => {
+    KonvaNodeInteractiveMaker.makeInteractive(e.target, stage.current.children[0]);
+  };
+
   const onKeyDown = (e) => {
+    e.preventDefault();
+
+    if ( e.key === 'Shift' ) {
+      stage.current.on('click', makeInteractive);
+    }
+
     props.keyDownHandler(e, stage.current);
   };
 
   const onKeyUp = (e) => {
+    e.preventDefault();
+
+    if ( e.key === 'Shift' ) {
+      KonvaNodeInteractiveMaker.resetInteractiveAllNodes();
+      stage.current.off('click', makeInteractive);
+    }
+
     props.keyUpHandler(e, stage.current);
   };
 
-  const buttonClickHandler = () => {
+  const onButtonClicked = () => {
     const sportEvents = stage.current.find('#sportEventsGroup');
     SportEventsDownloader.download(stage.current, sportEvents[0].children);
-  };
-
-  const onSportEventsGroupClick = ({ target }) => {
-    if ( target.name() === 'mainBackground' ) {
-      KonvaNodeInteractiveMaker.resetInteractiveAllNodes();
-    } else {
-      KonvaNodeInteractiveMaker.makeInteractive(target, stage.current.children[0]);
-    }
   };
 
   const content = props.sportEvents.map(sportEvent => {
@@ -60,7 +70,7 @@ const StageComponent = props => {
     >
 
       {/*<OnLeavePageComponentHandler />*/ }
-      <button onClick={ buttonClickHandler }>Скачать</button>
+      <button onClick={ onButtonClicked }>Скачать</button>
 
       <Stage ref={ stage }
              width={ window.innerWidth }
@@ -71,7 +81,7 @@ const StageComponent = props => {
       >
         <Provider store={ props.store }>
           <Layer name='sportEventsLayer'>
-            <Group onClick={ onSportEventsGroupClick } id='sportEventsGroup'>
+            <Group id='sportEventsGroup'>
               { content }
             </Group>
           </Layer>

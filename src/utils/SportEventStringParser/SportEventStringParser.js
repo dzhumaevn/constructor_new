@@ -20,7 +20,7 @@ class SportEventStringParser {
     let params = {};
     params.mainParams = this.getMainParams();
     params.rivals = await this.getRivalsParams(rivalsNames, sport, tournament);
-    params.fileName = this.getFilename(sport, tournament, rivalsNames, dateAndTime);
+    params.fileName = this.getFilename(sport, tournament, rivalsNames, dateAndTime, format);
     params.id = this.getId(rivalsNames);
     params.isOneMatch = this.rivalsNamesConvertToArr(rivalsNames).length <= 2;
 
@@ -122,9 +122,9 @@ class SportEventStringParser {
     return RivalsParams.getParams(rivalsNames, kindOfSport, tournament, this.format);
   }
 
-  getFilename(kindOfSport, tournament, inputRivalsNames, dateAndTime) {
+  getFilename(kindOfSport, tournament, inputRivalsNames, dateAndTime, format) {
     const fileNameString = [
-      'liga_match_stories_1125_2436',
+      format === 'stories' ? 'liga_match_stories_1125_2436' : 'TV_liga_match',
       kindOfSport,
       tournament,
       inputRivalsNames,

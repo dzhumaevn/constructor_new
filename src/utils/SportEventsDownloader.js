@@ -67,7 +67,9 @@ const SportEventsDownloader = {
     });
 
     zip.generateAsync({ type: "blob" })
-       .then(content => saveAs(content, "top_stories.zip"))
+       .then(content => {
+         saveAs(content, "top_events.zip");
+       })
        .catch(err => console.error("Не удалось экспортировать сторисы.", err));
   },
 };

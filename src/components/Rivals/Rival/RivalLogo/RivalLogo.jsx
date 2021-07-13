@@ -1,8 +1,7 @@
 import CustomImageContainer from "../../../CustomImage/CustomImageContainer";
 import React from "react";
 
-const Rivalprops = props => {
-
+const RivalLogo = props => {
   return (
     <CustomImageContainer imageUrl={ props.url }
                           width={ props.width }
@@ -13,4 +12,4 @@ const Rivalprops = props => {
   );
 };
 
-export default Rivalprops;
+export default RivalLogo;

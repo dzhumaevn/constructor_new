@@ -3,21 +3,24 @@ import Konva from "konva";
 const KonvaNodeInteractiveMaker = {
   _interactiveNodes: [],
 
-  _transformer: new Konva.Transformer({
-    nodes: [],
-    boundBoxFunc: (oldBox, newBox) => {
-      if ( newBox.width < 10 || newBox.height < 10 ) {
-        return oldBox;
-      }
-      return newBox;
-    },
-  }),
+  _transformer: null,
 
   makeInteractive(node, layer) {
-    this._transformer.nodes([node]);
+    if ( this._transformer ) return;
+
+    this._transformer = new Konva.Transformer({
+      nodes: [ node ],
+      boundBoxFunc: (oldBox, newBox) => {
+        if ( newBox.width < 10 || newBox.height < 10 ) {
+          return oldBox;
+        }
+        return newBox;
+      },
+    })
+
     node.setAttr('draggable', true);
 
-    if (!layer.children.includes(this._transformer)) {
+    if ( !layer.children.includes(this._transformer) ) {
       layer.add(this._transformer);
     }
 
@@ -25,7 +28,11 @@ const KonvaNodeInteractiveMaker = {
   },
 
   resetInteractiveAllNodes() {
-    this._transformer.nodes([]);
+    if ( this._transformer ) {
+      this._transformer.destroy();
+      this._transformer = null;
+    }
+
     this._interactiveNodes.forEach(node => node.setAttr('draggable', false));
     this._interactiveNodes = [];
   },

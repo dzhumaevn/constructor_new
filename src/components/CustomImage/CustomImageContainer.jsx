@@ -16,7 +16,6 @@ const changeSrc = (imageNode, src) => {
 
 const contextMenuHandler = e => {
   e.evt.preventDefault();
-
   const imageNode = e.target;
 
   const input = document.createElement('input');
@@ -31,8 +30,6 @@ const contextMenuHandler = e => {
       changeSrc(imageNode, e.target.result);
     }
   };
-
-  imageNode.setAttr('draggable', true);
 };
 
 const mapDispatchToProps = () => ({ contextMenuHandler });

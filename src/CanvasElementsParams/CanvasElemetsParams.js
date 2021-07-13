@@ -70,7 +70,7 @@ const CanvasElementsParams = {
     const tournamentStr = JSON.stringify(data[format].tournament);
     const tournamentObj = JSON.parse(tournamentStr);
     return {
-      ...tournamentObj[tournament === 'rpl' || 'default']
+      ...tournamentObj[tournament]
     }
   },
 

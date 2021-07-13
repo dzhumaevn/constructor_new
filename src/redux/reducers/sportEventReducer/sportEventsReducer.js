@@ -188,7 +188,7 @@ const initialState = [
       ],
       "fileName": "liga_match_stories_1125_2436-futbol-liga-chempionov-chelsi---atletiko-29-maya-2200",
       "id": "ch_e_7812",
-      "isOneMatch": false,
+      "isOneMatch": true,
       "lineOnCenter": {
         "fill": "#ffffff",
         "width": 1920,
