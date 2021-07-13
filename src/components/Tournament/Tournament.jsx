@@ -6,12 +6,13 @@ const Tournament = props => {
 
   return (
     <>
-      <CustomImageContainer x={ logoRpl.x }
-                            y={ logoRpl.y }
-                            width={ logoRpl.width}
-                            height={ logoRpl.height }
-                            imageUrl={ logoRpl.url }
-      />
+      {
+        logoRpl && <CustomImageContainer x={ logoRpl.x }
+                                         y={ logoRpl.y }
+                                         width={ logoRpl.width }
+                                         height={ logoRpl.height }
+                                         imageUrl={ logoRpl.url } />
+      }
       <CustomTextContainer text={ text }
                            fontSize={ fontSize }
                            fontStyle={ fontWeight }

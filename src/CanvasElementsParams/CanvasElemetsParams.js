@@ -69,8 +69,10 @@ const CanvasElementsParams = {
     tournament = transliterate(tournament).toLowerCase();
     const tournamentStr = JSON.stringify(data[format].tournament);
     const tournamentObj = JSON.parse(tournamentStr);
+    const params = tournamentObj[tournament] || tournamentObj['default'];
+
     return {
-      ...tournamentObj[tournament]
+      ...params
     }
   },
 
