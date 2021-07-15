@@ -80,7 +80,7 @@ class SportEventStringParser {
     x *= width + 30;
     y *= height + 30;
 
-    return { x: x + 150, y: y + 150, width, height };
+    return { x, y, width, height };
   }
 
   rivalsNamesConvertToArr(rivals) {

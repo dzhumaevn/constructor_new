@@ -485,8 +485,8 @@ const data = {
     ],
     ctaButton: {
       text: {
-        text: 'Заключить пари!', fill: '#004B13', fontFamily: "FirsNeueBold", textAlign: 'center', verticalAlign: 'middle',
-        fontSize: 44, y: 410, x: 449, width: 485, height: 70
+        text: 'Заключить пари!', fill: '#004B13', fontFamily: "FirsNeueBold", verticalAlign: 'middle',
+        fontSize: 44, y: 410, x: 505, height: 70
       },
       bg: { fill: '#F8E700', y: 410, x: 449, width: 485, height: 70 },
     }
@@ -661,7 +661,7 @@ const data = {
     ctaButton: {
       text: {
         text: 'Заключить пари!', fill: '#004B13', fontFamily: "FirsNeueBold",
-        fontSize: 44, y: 544, x: 235, width: 890, height: 70, textAlign: 'center'
+        fontSize: 44, y: 544, x: 480, height: 70
       },
       bg: { fill: '#F8E700', y: 540, x: 235, width: 890, height: 60 },
     }

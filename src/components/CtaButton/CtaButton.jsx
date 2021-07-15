@@ -3,7 +3,6 @@ import CustomRectContainer from "../CustomRect/CustomRectContainer";
 import CustomTextContainer from "../CustomText/CustomTextContainer";
 
 const CtaButton = props => {
-  console.log(props)
   return (
     <>
       <CustomRectContainer { ...props.params.bg }  />
