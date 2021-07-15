@@ -32,8 +32,9 @@ const contextMenuHandler = e => {
   };
 };
 
+const mapStateToProps = state => ({ format: state.format });
 const mapDispatchToProps = () => ({ contextMenuHandler });
 
-const CustomImageContainer = connect(null, mapDispatchToProps)(CustomImage);
+const CustomImageContainer = connect(mapStateToProps, mapDispatchToProps)(CustomImage);
 
 export default CustomImageContainer;

@@ -1,6 +1,8 @@
 import './SportEventsForm.css';
+import { useHistory } from "react-router-dom";
 
 const SportEventsForm = (props) => {
+  const history = useHistory();
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -22,6 +24,8 @@ const SportEventsForm = (props) => {
       const format = e.target.format.value;
       props.setFormat(format);
       props.addNewSportEvents(value);
+
+      history.push(process.env.PUBLIC_URL + '/rendered-content');
     }
   };
 
@@ -37,7 +41,7 @@ const SportEventsForm = (props) => {
           Маркетинг ТВ
         </label>
         <label>
-          <input name='format' defaultChecked={ props.format === 'push' } disabled type="radio" value={ 'push' } />
+          <input name='format' defaultChecked={ props.format === 'push' } type="radio" value={ 'push' } />
           Пуши
         </label>
 

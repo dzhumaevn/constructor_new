@@ -52,14 +52,12 @@ const CanvasElementsParams = {
   },
 
   getStartDate(format) {
-    format = transliterate(format).toLowerCase();
     return {
       ...data[format].startDate
     };
   },
 
   getStartTime(format) {
-    format = transliterate(format).toLowerCase();
     return {
       ...data[format].startTime
     };
@@ -67,6 +65,10 @@ const CanvasElementsParams = {
 
   getTournament(tournament, format) {
     tournament = transliterate(tournament).toLowerCase();
+
+    const rplVars = [ 'rpl', 'tinkoff-rpl', 'rossijskaya-premer-liga', 'tinkoff-rossijskaya-premer-liga' ];
+    if ( rplVars.includes(tournament) ) tournament = 'rpl';
+
     const tournamentStr = JSON.stringify(data[format].tournament);
     const tournamentObj = JSON.parse(tournamentStr);
     const params = tournamentObj[tournament] || tournamentObj['default'];
@@ -88,6 +90,18 @@ const CanvasElementsParams = {
     }
 
     return commonDecor['default'];
+  },
+
+  getLsLogo(format) {
+    return data[format].lsLogo;
+  },
+
+  getCoefficients(format) {
+    return data[format].coefficients;
+  },
+
+  getCtaButton(format) {
+    return data[format].ctaButton;
   }
 }
 

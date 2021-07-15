@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import stageReducer from "./reducers/stageReducer/stageReducer";
-import sportEventsReducer from "./reducers/sportEventReducer/sportEventsReducer";
+import sportEventsReducer from "./reducers/sportsEventReducer/sportEventsReducer";
 import loaderReducer from "./reducers/loaderReducer/loaderReducer";
 import thunk from "redux-thunk";
 import sportEventNodesMatrixReducer from "./reducers/sportEventNodesMatrixReducer/sportEventNodesMatrixReducer";

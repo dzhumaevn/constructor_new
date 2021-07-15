@@ -9,7 +9,7 @@ const CustomText = props => {
   };
 
   return (
-    <Text ref={ textComponent } onDblClick={ dbClickHandler } { ...props } />
+    <Text ref={ textComponent } onDblClick={ dbClickHandler } { ...props } lineHeight={ 1.2 } />
   )
 };
 

@@ -1,6 +1,6 @@
 import { Text } from "react-konva";
 import React from "react";
-import MainBackground from "../components/MainBackground/MainBackground";
+import MainBackground from "../MainBackground/MainBackground";
 
 const ErrorFallback = props => {
   const mainParams = props.sportEvent.params.mainParams;

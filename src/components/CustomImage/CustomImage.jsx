@@ -8,13 +8,13 @@ const CustomImage = props => {
   const [ isRounded, setIsRounded ] = useState(props.isRounded);
   const { x, y, width, height } = props;
 
-  const STROKE_WIDTH = 8;
+  const strokeWidth = isWithStroke ? props.format.includes('push') ? 4 : 8 : 0;
 
   const clipFunc = ctx => {
     ctx.arc(
-      x + (width / 2) + (STROKE_WIDTH / 2),
-      y + (width / 2) + (STROKE_WIDTH / 2),
-      width / 2 - STROKE_WIDTH * 1.5,
+      x + (width / 2) + (strokeWidth / 2),
+      y + (width / 2) + (strokeWidth / 2),
+      width / 2 - strokeWidth * 1.5,
       0,
       Math.PI * 2,
       false
@@ -36,19 +36,19 @@ const CustomImage = props => {
     <Group onDblClick={ dbClHandler }>
       {
         isWithStroke && <Circle listening={ false }
-                                x={ x + (width / 2) + (STROKE_WIDTH / 2) }
-                                y={ y + (width / 2) + (STROKE_WIDTH / 2) }
-                                radius={ (width / 2) - STROKE_WIDTH }
+                                x={ x + (width / 2) + (strokeWidth / 2) }
+                                y={ y + (width / 2) + (strokeWidth / 2) }
+                                radius={ (width / 2) - strokeWidth }
                                 stroke={ '#DDDDDD' }
-                                strokeWidth={ STROKE_WIDTH } />
+                                strokeWidth={ strokeWidth } />
       }
       <Group clipFunc={ isRounded && clipFunc }>
         <KonvaImage image={ image }
                     onContextMenu={ onContextMenuClicked }
-                    width={ width - STROKE_WIDTH }
-                    height={ height - STROKE_WIDTH }
-                    x={ x + STROKE_WIDTH }
-                    y={ y + STROKE_WIDTH }
+                    width={ width - strokeWidth }
+                    height={ height - strokeWidth }
+                    x={ x + strokeWidth }
+                    y={ y + strokeWidth }
         />
       </Group>
     </Group>

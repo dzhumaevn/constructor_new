@@ -1,19 +1,26 @@
-import lc from "../images/uefa_lc.jpeg";
-import le from "../images/uefa_le.jpeg";
-import seria_a from "../images/seria_a.svg";
-import ls from "../images/logo_liga_stavok.svg";
-import footballSportEquipment from "../images/sports_equipment/football.svg";
-import hockeySportEquipment from "../images/sports_equipment/hockey_puck.svg";
-import basketbolSportEquipment from "../images/sports_equipment/basketball.svg";
-import boksSportEquipment from "../images/sports_equipment/boxgloves.svg";
-import che from '../images/euro_bg.jpg';
-import logoRpl from '../images/logo_rpl.svg';
+import lc from "../assets/images/uefa_lc.jpeg";
+import le from "../assets/images/uefa_le.jpeg";
+import seria_a from "../assets/images/seria_a.svg";
+import ls from "../assets/images/logo_liga_stavok.svg";
+import lsRect from "../assets/images/logo_liga_stavok2.svg";
+import footballSportEquipment from "../assets/images/sports_equipment/football.svg";
+import hockeySportEquipment from "../assets/images/sports_equipment/hockey_puck.svg";
+import basketbolSportEquipment from "../assets/images/sports_equipment/basketball.svg";
+import boksSportEquipment from "../assets/images/sports_equipment/boxgloves.svg";
+import che from '../assets/images/euro_bg.jpg';
+import logoRpl from '../assets/images/logo_rpl.svg';
 
 const STORIES_MAIN_WIDTH = 1125;
 const STORIES_MAIN_HEIGHT = 2436;
 
 const MARKETINGTV_MAIN_WIDTH = 1920;
 const MARKETINGTV_MAIN_HEIGHT = 1080;
+
+const MOB_PUSH_MAIN_WIDTH = 1024;
+const MOB_PUSH_MAIN_HEIGHT = 512;
+
+const WEB_PUSH_MAIN_WIDTH = 1360;
+const WEB_PUSH_MAIN_HEIGHT = 680;
 
 const data = {
   stories: {
@@ -260,14 +267,13 @@ const data = {
           { rect: { y: 100, }, dash: { y: 170, } },
         ]
       }
-      ,
     },
     lineOnCenter: {
-      default: { fill: '#ffffff', width: 1920, height: 90, y: 690, x: 0 },
-      futbol: { fill: "#ffffff", width: 1920, height: 90, y: 690, x: 0 },
-      xokkej: { fill: '#FF343A', width: 1920, height: 90, y: 690, x: 0 },
-      basketbol: { fill: '#ffffff', width: 1920, height: 90, y: 690, x: 0 },
-      ufc: { fill: '#ffffff', width: 1920, height: 90, y: 690, x: 0 },
+      default: { fill: '#ffffff', width: MARKETINGTV_MAIN_WIDTH, height: 90, y: 690, x: 0 },
+      futbol: { fill: "#ffffff", width: MARKETINGTV_MAIN_WIDTH, height: 90, y: 690, x: 0 },
+      xokkej: { fill: '#FF343A', width: MARKETINGTV_MAIN_WIDTH, height: 90, y: 690, x: 0 },
+      basketbol: { fill: '#ffffff', width: MARKETINGTV_MAIN_WIDTH, height: 90, y: 690, x: 0 },
+      ufc: { fill: '#ffffff', width: MARKETINGTV_MAIN_WIDTH, height: 90, y: 690, x: 0 },
     },
     sportEquipment: {
       default: { url: ls, width: 270, height: 280, y: 630, x: 1500 },
@@ -299,6 +305,365 @@ const data = {
         textAlign: 'left',
         logoRpl: { url: logoRpl, y: 920, x: 85, width: 130, height: 130 }
       },
+    }
+  },
+  push: {
+    mainParams: { width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT },
+    mainBackground: {
+      default: { fill: "#014b14", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      futbol: { fill: "#014b14", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      basketbol: { fill: "#93621d", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      boks: { fill: "#014b14", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      ufc: { fill: "#000000", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      xokkej: { fill: "#00A6E0", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+    },
+    rivals: {
+      oneMatch: [
+        {
+          bgRect: { width: 340, height: 512, y: 0, x: 350, },
+          logo: { width: 150, height: 150, y: 42, x: 445, },
+          name: {
+            fontSize: 34, fontFamily: "FirsNeueBold", fontWeight: 700, fill: "#ffffff",
+            width: 300, y: 214, x: 370, textAlign: "center", wrap: "word",
+          }
+        },
+        {
+          bgRect: { width: 340, height: 512, y: 0, x: 690, },
+          logo: { width: 150, height: 150, y: 42, x: 785, },
+          name: {
+            fontSize: 34, fontFamily: "FirsNeueBold", fontWeight: 700, fill: "#ffffff",
+            width: 300, y: 214, x: 710, textAlign: "center", wrap: "word",
+          }
+        }
+      ],
+      severalMatches: {
+        commonDecor: {
+          'default': {
+            bgImage: { url: ls, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
+            dash: { fill: '#FFFFFF', opacity: 1, width: 40, height: 8, x: 670 }
+          },
+          'liga-chempionov': {
+            bgImage: { url: lc, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#020B42', opacity: 0.85, width: 600, height: 70, x: 390 },
+            dash: { fill: '#55FFF2', opacity: 0.85, width: 40, height: 8, x: 670 }
+          },
+          'liga-evropy': {
+            bgImage: { url: le, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
+            dash: { fill: '#F29B00', opacity: 1, width: 40, height: 8, x: 670 }
+          },
+          'seriya-a': {
+            bgImage: { url: seria_a, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#0E3C9A', opacity: 0.8, width: 600, height: 70, x: 390 },
+            dash: { fill: '#FFFFFF', opacity: 0.8, width: 40, height: 8, x: 670 }
+          },
+          'chempionat-evropy-po-futbolu': {
+            bgImage: { url: che, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#066d4b', opacity: 0.8, width: 600, height: 70, x: 390 },
+            dash: { fill: '#0ca995', opacity: 0.8, width: 40, height: 8, x: 670 }
+          },
+        },
+        rivalsNames: [
+          [
+            {
+              y: 25, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            },
+            {
+              y: 25, x: 701, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            }
+          ],
+          [
+            {
+              y: 124, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            },
+            {
+              y: 124, x: 710, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            }
+          ],
+          [
+            {
+              y: 214, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            },
+            {
+              y: 214, x: 710, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            }
+          ],
+        ],
+        decor: [
+          { rect: { y: 25, }, dash: { y: 54, } },
+          { rect: { y: 120, }, dash: { y: 152, } },
+          { rect: { y: 210, }, dash: { y: 243, } },
+        ]
+      }
+    },
+    lineOnCenter: {
+      default: { fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      futbol: { fill: "#ffffff", width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      xokkej: { fill: '#FF343A', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      basketbol: { fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      ufc: { fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+    },
+    sportEquipment: {
+      default: { url: ls, width: 270, height: 280, y: 630, x: 1500 },
+      futbol: { url: footballSportEquipment, width: 270, height: 280, y: 630, x: 1500 },
+      xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
+      basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
+      boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
+    },
+    startDate: {
+      fontSize: 42, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
+      y: 205, x: 34, width: 260, textAlign: 'left',
+    },
+    startTime: {
+      fontSize: 42, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
+      y: 205, x: 34, width: 260, textAlign: 'left',
+    },
+    tournament: {
+      default: {
+        fontSize: 30, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
+        y: 340, x: 34, width: 260, textAlign: 'left',
+      },
+      rpl: {
+        fontSize: 30,
+        fontFamily: 'FirsNeueRegular',
+        fill: '#ffffff',
+        y: 340,
+        x: 34,
+        width: 260,
+        textAlign: 'left',
+        logoRpl: { url: logoRpl, y: 920, x: 85, width: 130, height: 130 }
+      },
+    },
+    lsLogo: { url: lsRect, width: 250, height: 80, y: 62, x: 34 },
+    coefficients: [
+      {
+        name: {
+          text: 'П1', fontSize: 28, fontFamily: "FirsNeueRegular",
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 500
+        },
+        value: {
+          text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
+          fontSize: 40, y: 345, x: 449, width: 140, textAlign: 'center'
+        },
+        bg: { fill: '#ffffff', y: 335, x: 449, width: 140, height: 60 },
+      },
+      {
+        name: {
+          text: 'X', fontSize: 28, fontFamily: "FirsNeueRegular",
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 680.5
+        },
+        value: {
+          text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
+          fontSize: 40, y: 345, x: 624, width: 140, textAlign: 'center'
+        },
+        bg: { fill: '#ffffff', y: 335, x: 624, width: 140, height: 60 },
+      },
+      {
+        name: {
+          text: 'П2', fontSize: 28, fontFamily: "FirsNeueRegular",
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 845
+        },
+        value: {
+          text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
+          fontSize: 40, y: 345, x: 794, width: 140, textAlign: 'center'
+        },
+        bg: { fill: '#ffffff', y: 335, x: 794, width: 140, height: 60 },
+      },
+    ],
+    ctaButton: {
+      text: {
+        text: 'Заключить пари!', fill: '#004B13', fontFamily: "FirsNeueBold", textAlign: 'center', verticalAlign: 'middle',
+        fontSize: 44, y: 410, x: 449, width: 485, height: 70
+      },
+      bg: { fill: '#F8E700', y: 410, x: 449, width: 485, height: 70 },
+    }
+  },
+  webPush: {
+    mainParams: { width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT },
+    mainBackground: {
+      default: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      futbol: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      basketbol: { fill: "#93621d", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      boks: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      ufc: { fill: "#000000", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      xokkej: { fill: "#00A6E0", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+    },
+    rivals: {
+      oneMatch: [
+        {
+          bgRect: { width: 542, height: 680, y: 0, x: 0, },
+          logo: { width: 200, height: 200, y: 102, x: 274, },
+          name: {
+            fontSize: 35, fontFamily: "FirsNeueBold", fontWeight: 700, fill: "#ffffff",
+            width: 320, y: 324, x: 214, textAlign: "center", wrap: "word",
+          }
+        },
+        {
+          bgRect: { width: 542, height: 680, y: 0, x: 818, },
+          logo: { width: 200, height: 200, y: 102, x: 880, },
+          name: {
+            fontSize: 35, fontFamily: "FirsNeueBold", fontWeight: 700, fill: "#ffffff",
+            width: 320, y: 324, x: 820, textAlign: "center", wrap: "word",
+          }
+        }
+      ],
+      severalMatches: {
+        commonDecor: {
+          'default': {
+            bgImage: { url: ls, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
+            dash: { fill: '#FFFFFF', opacity: 1, width: 40, height: 8, x: 670 }
+          },
+          'liga-chempionov': {
+            bgImage: { url: lc, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#020B42', opacity: 0.85, width: 600, height: 70, x: 390 },
+            dash: { fill: '#55FFF2', opacity: 0.85, width: 40, height: 8, x: 670 }
+          },
+          'liga-evropy': {
+            bgImage: { url: le, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
+            dash: { fill: '#F29B00', opacity: 1, width: 40, height: 8, x: 670 }
+          },
+          'seriya-a': {
+            bgImage: { url: seria_a, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#0E3C9A', opacity: 0.8, width: 600, height: 70, x: 390 },
+            dash: { fill: '#FFFFFF', opacity: 0.8, width: 40, height: 8, x: 670 }
+          },
+          'chempionat-evropy-po-futbolu': {
+            bgImage: { url: che, width: 680, height: 512, x: 350, y: 0, },
+            rect: { fill: '#066d4b', opacity: 0.8, width: 600, height: 70, x: 390 },
+            dash: { fill: '#0ca995', opacity: 0.8, width: 40, height: 8, x: 670 }
+          },
+        },
+        rivalsNames: [
+          [
+            {
+              y: 25, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            },
+            {
+              y: 25, x: 701, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            }
+          ],
+          [
+            {
+              y: 124, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            },
+            {
+              y: 124, x: 710, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            }
+          ],
+          [
+            {
+              y: 214, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            },
+            {
+              y: 214, x: 710, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
+              wrap: 'word',
+            }
+          ],
+        ],
+        decor: [
+          { rect: { y: 25, }, dash: { y: 54, } },
+          { rect: { y: 120, }, dash: { y: 152, } },
+          { rect: { y: 210, }, dash: { y: 243, } },
+        ]
+      }
+    },
+    lineOnCenter: {
+      default: { visible: false, fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      futbol: { visible: false, fill: "#ffffff", width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      xokkej: { visible: false, fill: '#FF343A', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      basketbol: { visible: false, fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      ufc: { visible: false, fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+    },
+    sportEquipment: {
+      default: { url: ls, width: 270, height: 280, y: 630, x: 1500 },
+      futbol: { url: footballSportEquipment, width: 270, height: 280, y: 630, x: 1500 },
+      xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
+      basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
+      boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
+    },
+    startDate: {
+      fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
+      y: 115, x: 574, width: 210, textAlign: 'center',
+    },
+    startTime: {
+      fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
+      y: 115, x: 574, width: 210, textAlign: 'center',
+    },
+    tournament: {
+      default: {
+        fontSize: 30, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
+        y: 215, x: 574, width: 210, textAlign: 'center',
+      },
+      rpl: {
+        fontSize: 28, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
+        y: 308, x: 574, width: 210, textAlign: 'center',
+        logoRpl: { url: logoRpl, y: 215, x: 640, width: 80, height: 80 }
+      },
+    },
+    coefficients: [
+      {
+        name: {
+          text: 'П1', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: 366
+        },
+        value: {
+          text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
+          fontSize: 40, y: 466, x: 235, width: 307, height: 60, textAlign: 'center', verticalAlign: 'middle'
+        },
+        bg: { fill: '#ffffff', y: 464, x: 235, width: 307, height: 60 },
+      },
+      {
+        name: {
+          text: 'Х', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: WEB_PUSH_MAIN_WIDTH / 2 - 8
+        },
+        value: {
+          text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
+          fontSize: 40, y: 466, x: 548, width: 264, height: 60, textAlign: 'center', verticalAlign: 'middle'
+        },
+        bg: { fill: '#ffffff', y: 464, x: 548, width: 264, height: 60 },
+      },
+      {
+        name: {
+          text: 'П2', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: 962
+        },
+        value: {
+          text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
+          fontSize: 40, y: 466, x: 818, width: 307, height: 60, textAlign: 'center', verticalAlign: 'middle'
+        },
+        bg: { fill: '#ffffff', y: 464, x: 818, width: 307, height: 60 },
+      },
+    ],
+    ctaButton: {
+      text: {
+        text: 'Заключить пари!', fill: '#004B13', fontFamily: "FirsNeueBold",
+        fontSize: 44, y: 544, x: 235, width: 890, height: 70, textAlign: 'center'
+      },
+      bg: { fill: '#F8E700', y: 540, x: 235, width: 890, height: 60 },
     }
   },
 };

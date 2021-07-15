@@ -2,13 +2,13 @@ import { setLoadingStatusActionCreator } from "../loaderReducer/loaderReducer";
 import SportEventStringParser from "../../../utils/SportEventStringParser/SportEventStringParser";
 import { ADD_NEW_SPORT_EVENTS } from "./sportEventsReducer";
 import {
-  addSportEventToPositionsMatrixActionCreator,
+  addSportEventToPositionsMatrix,
   resetMatrixActionCreator
 } from "../sportEventNodesMatrixReducer/sportEventNodesMatrixActionCreators";
 import store from "../../store";
 import MessageBox from "../../../MessageBox";
 
-export const addNewSportEventsActionCreator = (sportEvents) => {
+export const addNewSportEvents = (sportEvents) => {
   return async (dispatch) => {
     dispatch(setLoadingStatusActionCreator(true));
     dispatch(resetMatrixActionCreator());
@@ -20,9 +20,19 @@ export const addNewSportEventsActionCreator = (sportEvents) => {
       const sportEvtStringParser = new SportEventStringParser();
 
       try {
-        const sportEvent = await sportEvtStringParser.getSportEvent(sportEventString, format);
-        dispatch(addSportEventToPositionsMatrixActionCreator(sportEvent));
-        parsedSportEvents.push(sportEvent);
+        if ( format !== 'push' ) {
+          const sportEvent = await sportEvtStringParser.getSportEvent(sportEventString, format);
+          dispatch(addSportEventToPositionsMatrix(sportEvent));
+          parsedSportEvents.push(sportEvent);
+        } else {
+          const sportEventPush = await sportEvtStringParser.getSportEvent(sportEventString, 'push');
+          dispatch(addSportEventToPositionsMatrix(sportEventPush));
+          parsedSportEvents.push(sportEventPush);
+
+          const sportEventWebPush = await sportEvtStringParser.getSportEvent(sportEventString, 'webPush');
+          dispatch(addSportEventToPositionsMatrix(sportEventWebPush));
+          parsedSportEvents.push(sportEventWebPush);
+        }
       } catch ( e ) {
 
         const messageBox = new MessageBox('.msgbox-area', { closeTime: 0 });

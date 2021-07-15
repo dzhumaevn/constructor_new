@@ -1,13 +1,13 @@
-@import "./styles/messageBox";
+@import "assets/styles/messageBox";
 
 @font-face {
   font-family: 'FirsNeueRegular';
-  src: url(./fonts/TypeType_-_TT_Firs_Neue_Regular.otf);
+  src: url(assets/fonts/TypeType_-_TT_Firs_Neue_Regular.otf);
 }
 
 @font-face {
   font-family: 'FirsNeueBold';
-  src: url('./fonts/TypeType_-_TT_Firs_Neue_Bold.otf');
+  src: url('assets/fonts/TypeType_-_TT_Firs_Neue_Bold.otf');
 }
 
 * {

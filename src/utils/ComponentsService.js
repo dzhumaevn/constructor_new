@@ -1,4 +1,4 @@
-// import componentsResponseMock from '../componentsResponse.json';
+import componentsResponseMock from '../componentsResponse.json';
 import store from "../redux/store";
 import {
   addComponentsActionCreator, addComponentsLoadingPromiseActionCreator,
@@ -63,13 +63,13 @@ export default class ComponentsService {
   };
 
   static async requestComponents(kindOfSport) {
-    // return componentsResponseMock.components;
+    return componentsResponseMock.components;
 
-    const componentsUrl = ComponentsService.getComponentsUrl(kindOfSport),
-          res           = await fetch(componentsUrl, ComponentsService.data.headersProps),
-          figmaDocument = await res.json();
-
-    return figmaDocument.components;
+    // const componentsUrl = ComponentsService.getComponentsUrl(kindOfSport),
+    //       res           = await fetch(componentsUrl, ComponentsService.data.headersProps),
+    //       figmaDocument = await res.json();
+    //
+    // return figmaDocument.components;
   }
 
   static getComponentsUrl(kindOfSport) {

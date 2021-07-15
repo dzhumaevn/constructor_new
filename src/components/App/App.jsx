@@ -1,19 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import StageComponentContainer from "../StageComponent/StageComponentContainer";
 import Loader from "../Loader/Loader";
-import { NavLink, Route, useHistory, Switch } from "react-router-dom";
+import { NavLink, Route, Switch } from "react-router-dom";
 import './App.css';
 import SportEventsFormContainer from "../SportEventForm/SportEventsFormContainer";
 
 const App = (props) => {
-  const history = useHistory();
-
-  useEffect(() => {
-    if ( props.hasComponents ) {
-      history.push(process.env.PUBLIC_URL + '/rendered-content');
-    }
-  });
-
   if ( props.isLoading ) {
     return <Loader />;
   }
@@ -22,7 +14,7 @@ const App = (props) => {
     <>
       <NavLink to={ process.env.PUBLIC_URL }>Главная</NavLink>
       {
-        props.hasComponents
+        props.hasSportEvents
           ? <NavLink to={ process.env.PUBLIC_URL + '/rendered-content' }> Отрисованные</NavLink>
           : null
       }

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import SportEventsForm from "./SportEventsForm";
-import { addNewSportEventsActionCreator } from "../../redux/reducers/sportEventReducer/sportEventsActionCreators";
+import { addNewSportEvents } from "../../redux/reducers/sportsEventReducer/sportEventsActionCreators";
 import { setFormatActionCreator } from "../../redux/reducers/formatReducer/formatReducer";
 
 const eventsRowsSeparator = '+';
@@ -23,7 +23,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addNewSportEvents: (sportEventsStrings) => {
       window.localStorage.setItem('eventsList', sportEventsStrings.split('\n').join(eventsRowsSeparator))
-      dispatch(addNewSportEventsActionCreator(sportEventsStrings));
+      dispatch(addNewSportEvents(sportEventsStrings));
     },
     setFormat: format => dispatch(setFormatActionCreator(format))
   }

@@ -46,7 +46,6 @@ const StageComponent = props => {
   };
 
   const content = props.sportEvents.map(sportEvent => {
-    console.log(sportEvent)
     return (
       <SportEventContainer sportEvent={ sportEvent }
                            key={ sportEvent.params.id }

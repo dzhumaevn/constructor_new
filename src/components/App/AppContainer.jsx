@@ -5,7 +5,7 @@ import { setLoadingStatusActionCreator } from "../../redux/reducers/loaderReduce
 const mapStateToProps = (state) => {
   return {
     isLoading: state.loader.isLoading,
-    hasComponents: !!state.components.components,
+    hasSportEvents: !!state.sportEvents.length,
   };
 };
 

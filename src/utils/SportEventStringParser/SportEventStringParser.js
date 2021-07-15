@@ -7,7 +7,7 @@ import RivalsParams from "./utils/RivalsParams";
 class SportEventStringParser {
   async parse(stringData, format) {
     this.format = format;
-    const [sport, tournament, rivalsNames, dateAndTime] = this.parseString(stringData);
+    const [ sport, tournament, rivalsNames, dateAndTime ] = this.parseString(stringData);
 
     const info = {};
     info.inputStringData = stringData;
@@ -32,6 +32,9 @@ class SportEventStringParser {
     canvasParams.startDate = this.getStartDate();
     canvasParams.startTime = this.getStartTime();
     canvasParams.tournament = this.getTournament(tournament);
+    canvasParams.lsLogo = this.getLsLogo();
+    canvasParams.coefficients = this.getCoefficients();
+    canvasParams.ctaButton = this.getCtaButton();
 
     params = {
       ...params,
@@ -46,13 +49,13 @@ class SportEventStringParser {
   }
 
   parseString(string) {
-    let [sport, tournament, rivalsNames, dateAndTime] = string.split(';').map(item => item.trim());
+    let [ sport, tournament, rivalsNames, dateAndTime ] = string.split(';').map(item => item.trim());
 
     if ( !sport ) {
       throw new Error('Ошибка в событии ' + (string) + ': Вид спорта не введён.');
     }
 
-    return [sport, tournament, rivalsNames, dateAndTime];
+    return [ sport, tournament, rivalsNames, dateAndTime ];
   }
 
   getMainParams() {
@@ -77,7 +80,7 @@ class SportEventStringParser {
     x *= width + 30;
     y *= height + 30;
 
-    return { x:x + 150, y:y + 150, width, height };
+    return { x: x + 150, y: y + 150, width, height };
   }
 
   rivalsNamesConvertToArr(rivals) {
@@ -85,7 +88,7 @@ class SportEventStringParser {
     const rivalsList = [];
 
     if ( !rivals.includes(',') ) {
-      const [leftRivalName, rightRivalName] = rivals.split(rivalsSeparator);
+      const [ leftRivalName, rightRivalName ] = rivals.split(rivalsSeparator);
       rivalsList.push(leftRivalName);
       rivalsList.push(rightRivalName);
     } else {
@@ -123,8 +126,25 @@ class SportEventStringParser {
   }
 
   getFilename(kindOfSport, tournament, inputRivalsNames, dateAndTime, format) {
+    switch ( format ) {
+      case 'stories':
+        format = 'liga_match_stories_1125_2436';
+        break;
+      case 'push':
+        format = 'liga_match_push_1024_512';
+        break;
+      case 'webPush':
+        format = 'WEB_liga_match_push_1360_680';
+        break;
+      case 'marketingtv':
+        format = 'TV_liga_match';
+        break;
+      default:
+        format = 'liga_match_stories_1125_2436';
+    }
+
     const fileNameString = [
-      format === 'stories' ? 'liga_match_stories_1125_2436' : 'TV_liga_match',
+      format,
       kindOfSport,
       tournament,
       inputRivalsNames,
@@ -170,6 +190,18 @@ class SportEventStringParser {
 
   getTournament(tournament) {
     return CanvasElementsParams.getTournament(tournament, this.format);
+  }
+
+  getLsLogo() {
+    return CanvasElementsParams.getLsLogo(this.format);
+  }
+
+  getCoefficients() {
+    return CanvasElementsParams.getCoefficients(this.format);
+  }
+
+  getCtaButton() {
+    return CanvasElementsParams.getCtaButton(this.format);
   }
 }
 

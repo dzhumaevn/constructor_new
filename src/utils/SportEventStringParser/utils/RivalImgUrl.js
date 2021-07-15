@@ -1,6 +1,6 @@
 import ComponentsService from "../../ComponentsService";
 import transliterate from "../../transliterate";
-import ls from '../../../images/logo_liga_stavok.svg'
+import ls from '../../../assets/images/logo_liga_stavok.svg'
 
 const RivalImgUrl = {
   data: {

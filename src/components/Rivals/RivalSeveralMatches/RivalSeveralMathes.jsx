@@ -5,7 +5,7 @@ import CustomRectContainer from "../../CustomRect/CustomRectContainer";
 
 const RivalSeveralMatches = ({ matches, rivalsBg }) => {
   const matchesContent = matches.map(match => {
-    const [leftRival, rightRival] = match.rivals;
+    const [ leftRival, rightRival ] = match.rivals;
     const { rect, dash } = match.decor;
 
     return (

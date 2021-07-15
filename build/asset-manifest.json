@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/constructor_new/build/static/css/main.8529d0ca.chunk.css",
-    "main.js": "/constructor_new/build/static/js/main.d2dcccdc.chunk.js",
-    "main.js.map": "/constructor_new/build/static/js/main.d2dcccdc.chunk.js.map",
-    "runtime-main.js": "/constructor_new/build/static/js/runtime-main.a52450be.js",
-    "runtime-main.js.map": "/constructor_new/build/static/js/runtime-main.a52450be.js.map",
-    "static/js/2.1b178909.chunk.js": "/constructor_new/build/static/js/2.1b178909.chunk.js",
-    "static/js/2.1b178909.chunk.js.map": "/constructor_new/build/static/js/2.1b178909.chunk.js.map",
-    "static/js/3.6af8a256.chunk.js": "/constructor_new/build/static/js/3.6af8a256.chunk.js",
-    "static/js/3.6af8a256.chunk.js.map": "/constructor_new/build/static/js/3.6af8a256.chunk.js.map",
+    "main.css": "/constructor_new/build/static/css/main.a52d4dac.chunk.css",
+    "main.js": "/constructor_new/build/static/js/main.64cc50da.chunk.js",
+    "main.js.map": "/constructor_new/build/static/js/main.64cc50da.chunk.js.map",
+    "runtime-main.js": "/constructor_new/build/static/js/runtime-main.bf933420.js",
+    "runtime-main.js.map": "/constructor_new/build/static/js/runtime-main.bf933420.js.map",
+    "static/js/2.f1b8dff7.chunk.js": "/constructor_new/build/static/js/2.f1b8dff7.chunk.js",
+    "static/js/2.f1b8dff7.chunk.js.map": "/constructor_new/build/static/js/2.f1b8dff7.chunk.js.map",
+    "static/js/3.45c981eb.chunk.js": "/constructor_new/build/static/js/3.45c981eb.chunk.js",
+    "static/js/3.45c981eb.chunk.js.map": "/constructor_new/build/static/js/3.45c981eb.chunk.js.map",
     "index.html": "/constructor_new/build/index.html",
-    "static/css/main.8529d0ca.chunk.css.map": "/constructor_new/build/static/css/main.8529d0ca.chunk.css.map",
-    "static/js/2.1b178909.chunk.js.LICENSE.txt": "/constructor_new/build/static/js/2.1b178909.chunk.js.LICENSE.txt",
+    "static/css/main.a52d4dac.chunk.css.map": "/constructor_new/build/static/css/main.a52d4dac.chunk.css.map",
+    "static/js/2.f1b8dff7.chunk.js.LICENSE.txt": "/constructor_new/build/static/js/2.f1b8dff7.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/constructor_new/build/static/media/TypeType_-_TT_Firs_Neue_Regular.45056628.otf",
     "static/media/basketball.d4c8c411.svg": "/constructor_new/build/static/media/basketball.d4c8c411.svg",
     "static/media/boxgloves.8e853352.svg": "/constructor_new/build/static/media/boxgloves.8e853352.svg",
@@ -19,15 +19,16 @@
     "static/media/football.cf4fc7f5.svg": "/constructor_new/build/static/media/football.cf4fc7f5.svg",
     "static/media/hockey_puck.e5079a66.svg": "/constructor_new/build/static/media/hockey_puck.e5079a66.svg",
     "static/media/logo_liga_stavok.69534abb.svg": "/constructor_new/build/static/media/logo_liga_stavok.69534abb.svg",
+    "static/media/logo_liga_stavok2.2c41f29c.svg": "/constructor_new/build/static/media/logo_liga_stavok2.2c41f29c.svg",
     "static/media/logo_rpl.590c7a08.svg": "/constructor_new/build/static/media/logo_rpl.590c7a08.svg",
     "static/media/seria_a.904a522e.svg": "/constructor_new/build/static/media/seria_a.904a522e.svg",
     "static/media/uefa_lc.441fee4d.jpeg": "/constructor_new/build/static/media/uefa_lc.441fee4d.jpeg",
     "static/media/uefa_le.4c561445.jpeg": "/constructor_new/build/static/media/uefa_le.4c561445.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a52450be.js",
-    "static/js/2.1b178909.chunk.js",
-    "static/css/main.8529d0ca.chunk.css",
-    "static/js/main.d2dcccdc.chunk.js"
+    "static/js/runtime-main.bf933420.js",
+    "static/js/2.f1b8dff7.chunk.js",
+    "static/css/main.a52d4dac.chunk.css",
+    "static/js/main.64cc50da.chunk.js"
   ]
 }

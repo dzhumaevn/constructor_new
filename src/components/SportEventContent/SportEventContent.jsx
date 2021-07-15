@@ -6,7 +6,10 @@ import Tournament from "../Tournament/Tournament";
 import SportEquipment from "../SportEquipment/SportEquipment";
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "../../ErrorFallback/ErrorFallback";
+import ErrorFallback from "../ErrorFallback/ErrorFallback";
+import LsLogo from "../LsLogo/LsLogo";
+import Coefficients from "../Coefficients/Coefficients";
+import CtaButton from "../CtaButton/CtaButton";
 
 const SportEventContent = props => {
   const params = props.sportEvent.params;
@@ -28,6 +31,10 @@ const SportEventContent = props => {
   const tournament = params.tournament;
   tournament.text = props.sportEvent.info.tournament;
 
+  const lsLogo = params.lsLogo;
+  const coefficients = params.coefficients;
+  const ctaButton = params.ctaButton;
+
   return (
     <ErrorBoundary FallbackComponent={ () => <ErrorFallback sportEvent={ props.sportEvent } /> }>
       <MainBackground name='mainBackground' { ...mainBackground } />
@@ -38,8 +45,12 @@ const SportEventContent = props => {
       <SportEquipment params={ sportEquipment } />
       <Date startDate={ startDate } startTimeValue={ startTime.text } />
       <Tournament params={ tournament } />
+      { lsLogo && <LsLogo params={ lsLogo } /> }
+      { coefficients && <Coefficients params={ coefficients } /> }
+      { ctaButton && <CtaButton params={ ctaButton } /> }
     </ErrorBoundary>
   );
-};
+}
+;
 
 export default SportEventContent;

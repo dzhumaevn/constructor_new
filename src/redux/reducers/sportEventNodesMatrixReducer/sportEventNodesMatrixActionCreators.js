@@ -1,6 +1,6 @@
 import { ADD_SPORT_EVENT, RESET_MATRIX } from "./sportEventNodesMatrixReducer";
 
-export const addSportEventToPositionsMatrixActionCreator = (sportEvent) => {
+export const addSportEventToPositionsMatrix = (sportEvent) => {
   return (dispatch, getState) => {
     const matrix = [...getState().sportEventNodesMatrix];
     const lastRow = matrix[matrix.length - 1];
