@@ -1,5 +1,9 @@
+import lc_square from "../assets/images/uefa_lc_square.jpeg";
+import le_square from "../assets/images/uefa_le_square.jpeg";
+import liga_conf_square from "../assets/images/liga_conf_square.jpg";
 import lc from "../assets/images/uefa_lc.jpeg";
 import le from "../assets/images/uefa_le.jpeg";
+import liga_conf from "../assets/images/liga_conf.jpeg";
 import seria_a from "../assets/images/seria_a.svg";
 import ls from "../assets/images/logo_liga_stavok.svg";
 import lsRect from "../assets/images/logo_liga_stavok2.svg";
@@ -62,12 +66,12 @@ const data = {
             dash: { fill: '#FFFFFF', opacity: 1, width: 48, height: 10, x: 536 }
           },
           'liga-chempionov': {
-            bgImage: { url: lc, width: 1125, height: 1110, x: 0, y: 0, },
+            bgImage: { url: lc_square, width: 1125, height: 1110, x: 0, y: 0, },
             rect: { fill: '#020B42', opacity: 0.85, width: 1062, height: 160, x: 31 },
             dash: { fill: '#55FFF2', opacity: 0.85, width: 48, height: 10, x: 536 }
           },
           'liga-evropy': {
-            bgImage: { url: le, width: 1125, height: 1100, x: 0, y: 0 },
+            bgImage: { url: le_square, width: 1125, height: 1100, x: 0, y: 0 },
             rect: { fill: '#2C2C2C', opacity: 1, width: 1062, height: 160, x: 31 },
             dash: { fill: '#F29B00', opacity: 1, width: 48, height: 10, x: 536 }
           },
@@ -76,8 +80,8 @@ const data = {
             rect: { fill: '#0E3C9A', opacity: 0.8, width: 1062, height: 160, x: 31 },
             dash: { fill: '#FFFFFF', opacity: 0.8, width: 48, height: 10, x: 536 }
           },
-          'chempionat-evropy-po-futbolu': {
-            bgImage: { url: che, width: 1125, height: 1100, x: 0, y: 0 },
+          'liga-konferencij': {
+            bgImage: { url: liga_conf_square, width: 1125, height: 1100, x: 0, y: 0 },
             rect: { fill: '#066d4b', opacity: 0.8, width: 1062, height: 160, x: 31 },
             dash: { fill: '#0ca995', opacity: 0.8, width: 48, height: 10, x: 536 }
           },
@@ -198,7 +202,7 @@ const data = {
       severalMatches: {
         commonDecor: {
           'default': {
-            bgImage: { url: ls, width: 1920, height: 690, x: 0, y: 0, },
+            bgImage: { url: lsRect, width: 1920, height: 690, x: 0, y: 0, },
             rect: { fill: '#2C2C2C', opacity: 1, width: 1750, height: 150, x: 90 },
             dash: { fill: '#FFFFFF', opacity: 1, width: 70, height: 15, x: 930 }
           },
@@ -217,8 +221,8 @@ const data = {
             rect: { fill: '#0E3C9A', opacity: 0.8, width: 1750, height: 150, x: 90 },
             dash: { fill: '#FFFFFF', opacity: 0.8, width: 70, height: 15, x: 930 }
           },
-          'chempionat-evropy-po-futbolu': {
-            bgImage: { url: che, width: 1920, height: 690, x: 0, y: 0, },
+          'liga-konferencij': {
+            bgImage: { url: liga_conf, width: 1920, height: 690, x: 0, y: 0, },
             rect: { fill: '#066d4b', opacity: 0.8, width: 1750, height: 150, x: 90 },
             dash: { fill: '#0ca995', opacity: 0.8, width: 70, height: 15, x: 930 }
           },
@@ -339,17 +343,17 @@ const data = {
       severalMatches: {
         commonDecor: {
           'default': {
-            bgImage: { url: ls, width: 680, height: 512, x: 350, y: 0, },
+            bgImage: { url: lsRect, width: 680, height: 512, x: 350, y: 0, },
             rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
             dash: { fill: '#FFFFFF', opacity: 1, width: 40, height: 8, x: 670 }
           },
           'liga-chempionov': {
-            bgImage: { url: lc, width: 680, height: 512, x: 350, y: 0, },
+            bgImage: { url: lc_square, width: 680, height: 512, x: 350, y: 0, },
             rect: { fill: '#020B42', opacity: 0.85, width: 600, height: 70, x: 390 },
             dash: { fill: '#55FFF2', opacity: 0.85, width: 40, height: 8, x: 670 }
           },
           'liga-evropy': {
-            bgImage: { url: le, width: 680, height: 512, x: 350, y: 0, },
+            bgImage: { url: le_square, width: 680, height: 512, x: 350, y: 0, },
             rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
             dash: { fill: '#F29B00', opacity: 1, width: 40, height: 8, x: 670 }
           },
@@ -358,8 +362,8 @@ const data = {
             rect: { fill: '#0E3C9A', opacity: 0.8, width: 600, height: 70, x: 390 },
             dash: { fill: '#FFFFFF', opacity: 0.8, width: 40, height: 8, x: 670 }
           },
-          'chempionat-evropy-po-futbolu': {
-            bgImage: { url: che, width: 680, height: 512, x: 350, y: 0, },
+          'liga-konferencij': {
+            bgImage: { url: liga_conf_square, width: 680, height: 512, x: 350, y: 0, },
             rect: { fill: '#066d4b', opacity: 0.8, width: 600, height: 70, x: 390 },
             dash: { fill: '#0ca995', opacity: 0.8, width: 40, height: 8, x: 670 }
           },
@@ -452,7 +456,8 @@ const data = {
       {
         name: {
           text: 'П1', fontSize: 28, fontFamily: "FirsNeueRegular",
-          fontWeight: 700, fill: '#ffffff', y: 295, x: 500
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 500,
+          shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
           text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
@@ -463,7 +468,8 @@ const data = {
       {
         name: {
           text: 'X', fontSize: 28, fontFamily: "FirsNeueRegular",
-          fontWeight: 700, fill: '#ffffff', y: 295, x: 680.5
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 680.5,
+          shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
           text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
@@ -474,7 +480,8 @@ const data = {
       {
         name: {
           text: 'П2', fontSize: 28, fontFamily: "FirsNeueRegular",
-          fontWeight: 700, fill: '#ffffff', y: 295, x: 845
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 845,
+          shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
           text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
@@ -523,73 +530,73 @@ const data = {
       severalMatches: {
         commonDecor: {
           'default': {
-            bgImage: { url: ls, width: 680, height: 512, x: 350, y: 0, },
-            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
-            dash: { fill: '#FFFFFF', opacity: 1, width: 40, height: 8, x: 670 }
+            bgImage: { url: lsRect, width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, x: 0, y: 0, },
+            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 235 },
+            dash: { fill: '#FFFFFF', opacity: 1, width: 40, height: 8, x: 515 }
           },
           'liga-chempionov': {
-            bgImage: { url: lc, width: 680, height: 512, x: 350, y: 0, },
-            rect: { fill: '#020B42', opacity: 0.85, width: 600, height: 70, x: 390 },
-            dash: { fill: '#55FFF2', opacity: 0.85, width: 40, height: 8, x: 670 }
+            bgImage: { url: lc, width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, x: 0, y: 0, },
+            rect: { fill: '#020B42', opacity: 0.85, width: 600, height: 70, x: 235 },
+            dash: { fill: '#55FFF2', opacity: 0.85, width: 40, height: 8, x: 515 }
           },
           'liga-evropy': {
-            bgImage: { url: le, width: 680, height: 512, x: 350, y: 0, },
-            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 390 },
-            dash: { fill: '#F29B00', opacity: 1, width: 40, height: 8, x: 670 }
+            bgImage: { url: le, width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, x: 0, y: 0, },
+            rect: { fill: '#2C2C2C', opacity: 1, width: 600, height: 70, x: 235 },
+            dash: { fill: '#F29B00', opacity: 1, width: 40, height: 8, x: 515 }
           },
           'seriya-a': {
-            bgImage: { url: seria_a, width: 680, height: 512, x: 350, y: 0, },
-            rect: { fill: '#0E3C9A', opacity: 0.8, width: 600, height: 70, x: 390 },
-            dash: { fill: '#FFFFFF', opacity: 0.8, width: 40, height: 8, x: 670 }
+            bgImage: { url: seria_a, width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, x: 0, y: 0, },
+            rect: { fill: '#0E3C9A', opacity: 0.8, width: 600, height: 70, x: 235 },
+            dash: { fill: '#FFFFFF', opacity: 0.8, width: 40, height: 8, x: 515 }
           },
-          'chempionat-evropy-po-futbolu': {
-            bgImage: { url: che, width: 680, height: 512, x: 350, y: 0, },
-            rect: { fill: '#066d4b', opacity: 0.8, width: 600, height: 70, x: 390 },
-            dash: { fill: '#0ca995', opacity: 0.8, width: 40, height: 8, x: 670 }
+          'liga-konferencij': {
+            bgImage: { url: liga_conf, width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, x: 0, y: 0, },
+            rect: { fill: '#066d4b', opacity: 0.8, width: 600, height: 70, x: 235 },
+            dash: { fill: '#0ca995', opacity: 0.8, width: 40, height: 8, x: 515 }
           },
         },
         rivalsNames: [
           [
             {
-              y: 25, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              y: 105, x: 235, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
               fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
               wrap: 'word',
             },
             {
-              y: 25, x: 701, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              y: 105, x: 546, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
               fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
               wrap: 'word',
             }
           ],
           [
             {
-              y: 124, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              y: 204, x: 235, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
               fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
               wrap: 'word',
             },
             {
-              y: 124, x: 710, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              y: 204, x: 546, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
               fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
               wrap: 'word',
             }
           ],
           [
             {
-              y: 214, x: 390, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              y: 294, x: 235, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
               fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
               wrap: 'word',
             },
             {
-              y: 214, x: 710, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
+              y: 294, x: 546, fontSize: 28, fontFamily: "FirsNeueBold", fontWeight: 700,
               fill: "#ffffff", width: 280, height: 70, align: "center", verticalAlign: 'middle',
               wrap: 'word',
             }
           ],
         ],
         decor: [
-          { rect: { y: 25, }, dash: { y: 54, } },
-          { rect: { y: 120, }, dash: { y: 152, } },
-          { rect: { y: 210, }, dash: { y: 243, } },
+          { rect: { y: 105, }, dash: { y: 134, } },
+          { rect: { y: 200, }, dash: { y: 232, } },
+          { rect: { y: 290, }, dash: { y: 323, } },
         ]
       }
     },
@@ -608,28 +615,33 @@ const data = {
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
     },
     startDate: {
-      fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 115, x: 574, width: 210, textAlign: 'center',
+      fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700,
+      shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
+      fill: '#ffffff', y: 104, x: 880, width: 210, textAlign: 'center',
     },
     startTime: {
-      fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 115, x: 574, width: 210, textAlign: 'center',
+      fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700,
+      shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
+      fill: '#ffffff', y: 104, x: 880, width: 210, textAlign: 'center',
     },
     tournament: {
       default: {
         fontSize: 30, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
-        y: 215, x: 574, width: 210, textAlign: 'center',
+        y: 204, x: 880, width: 210, textAlign: 'center',
+        shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
       },
       rpl: {
         fontSize: 28, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
-        y: 308, x: 574, width: 210, textAlign: 'center',
+        y: 297, x: 880, width: 210, textAlign: 'center',
+        shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         logoRpl: { url: logoRpl, y: 215, x: 640, width: 80, height: 80 }
       },
     },
     coefficients: [
       {
         name: {
-          text: 'П1', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: 366
+          text: 'П1', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: 366,
+          shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
           text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
@@ -639,7 +651,8 @@ const data = {
       },
       {
         name: {
-          text: 'Х', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: WEB_PUSH_MAIN_WIDTH / 2 - 8
+          text: 'Х', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: WEB_PUSH_MAIN_WIDTH / 2 - 8,
+          shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
           text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",
@@ -649,7 +662,8 @@ const data = {
       },
       {
         name: {
-          text: 'П2', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: 962
+          text: 'П2', fontSize: 28, fontFamily: "FirsNeueBold", fill: '#ffffff', y: 428, x: 962,
+          shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
           text: '0.00', fill: '#004B13', fontFamily: "FirsNeueRegular",

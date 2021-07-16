@@ -3,7 +3,7 @@ import CustomTextContainer from "../CustomText/CustomTextContainer";
 const Time = props => {
   const { width, x, y, fill, text, fontSize, fontFamily, fontWeight, textAlign } = props.params;
 
-  if (!text) {
+  if ( !text ) {
     return null;
   }
 

@@ -4,7 +4,8 @@ const Date = props => {
   const { width, x, y, fill, text: dateValue, fontFamily, fontSize, fontWeight, textAlign } = props.startDate;
 
   return (
-    <CustomTextContainer text={ dateValue + ' ' + props.startTimeValue + ' МСК' }
+    <CustomTextContainer {...props.startDate}
+      text={ dateValue + ' ' + props.startTimeValue + ' МСК' }
                          fontFamily={ fontFamily }
                          fontSize={ fontSize }
                          fontStyle={ fontWeight }

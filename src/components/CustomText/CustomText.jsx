@@ -7,7 +7,7 @@ const CustomText = props => {
   const dbClickHandler = e => {
     props.textEditor(e, textComponent.current);
   };
-
+  console.log(props)
   return (
     <Text ref={ textComponent } onDblClick={ dbClickHandler } { ...props } lineHeight={ 1.2 } />
   )

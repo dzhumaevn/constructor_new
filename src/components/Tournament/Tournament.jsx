@@ -13,7 +13,8 @@ const Tournament = props => {
                                          height={ logoRpl.height }
                                          imageUrl={ logoRpl.url } />
       }
-      <CustomTextContainer text={ text }
+      <CustomTextContainer { ...props.params }
+                           text={ text }
                            fontSize={ fontSize }
                            fontStyle={ fontWeight }
                            fontFamily={ fontFamily }
