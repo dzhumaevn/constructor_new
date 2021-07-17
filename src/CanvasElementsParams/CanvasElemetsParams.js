@@ -85,8 +85,6 @@ const CanvasElementsParams = {
 
     for ( const key of Object.keys(commonDecor) ) {
       if ( tournament.includes(key) ) {
-        console.log(key, tournament)
-
         return commonDecor[key];
       }
     }

@@ -19,6 +19,7 @@ class SportEventStringParser {
 
     let params = {};
     params.mainParams = this.getMainParams();
+    params.format = format;
     params.rivals = await this.getRivalsParams(rivalsNames, sport, tournament);
     params.fileName = this.getFilename(sport, tournament, rivalsNames, dateAndTime, format);
     params.id = this.getId(rivalsNames);

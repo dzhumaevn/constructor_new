@@ -11,7 +11,7 @@ import footballSportEquipment from "../assets/images/sports_equipment/football.s
 import hockeySportEquipment from "../assets/images/sports_equipment/hockey_puck.svg";
 import basketbolSportEquipment from "../assets/images/sports_equipment/basketball.svg";
 import boksSportEquipment from "../assets/images/sports_equipment/boxgloves.svg";
-import che from '../assets/images/euro_bg.jpg';
+import ufcSportEquipment from '../assets/images/ufc.png';
 import logoRpl from '../assets/images/logo_rpl.svg';
 
 const STORIES_MAIN_WIDTH = 1125;
@@ -144,6 +144,7 @@ const data = {
       xokkej: { url: hockeySportEquipment, width: 230, height: 230, y: 1040, x: 750 },
       basketbol: { url: basketbolSportEquipment, width: 360, height: 320, y: 1020, x: 670 },
       boks: { url: boksSportEquipment, width: 360, height: 320, y: 1020, x: 670 },
+      ufc: { url: ufcSportEquipment, width: 400, height: 320, y: 1020, x: 670 },
     },
     startDate: {
       fontSize: 120, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
@@ -285,6 +286,7 @@ const data = {
       xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
+      ufc: { url: ufcSportEquipment, width: 350, height: 280, y: 630, x: 1500 },
     },
     startDate: {
       fontSize: 100, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
@@ -426,14 +428,15 @@ const data = {
       xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
+      ufc: { url: ufcSportEquipment, width: 350, height: 280, y: 630, x: 1500 },
     },
     startDate: {
       fontSize: 42, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 205, x: 34, width: 260, textAlign: 'left',
+      y: 205, x: 34, width: 280, textAlign: 'left',
     },
     startTime: {
       fontSize: 42, fontFamily: 'FirsNeueBold', fontWeight: 700, fill: '#ffffff',
-      y: 205, x: 34, width: 260, textAlign: 'left',
+      y: 205, x: 34, width: 280, textAlign: 'left',
     },
     tournament: {
       default: {
@@ -613,26 +616,27 @@ const data = {
       xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
+      ufc: { url: ufcSportEquipment, width: 350, height: 280, y: 630, x: 1500 },
     },
     startDate: {
       fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700,
       shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
-      fill: '#ffffff', y: 104, x: 880, width: 210, textAlign: 'center',
+      fill: '#ffffff', y: 104, x: 562, width: 230, textAlign: 'center',
     },
     startTime: {
       fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700,
       shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
-      fill: '#ffffff', y: 104, x: 880, width: 210, textAlign: 'center',
+      fill: '#ffffff', y: 104, x: 562, width: 230, textAlign: 'center',
     },
     tournament: {
       default: {
         fontSize: 30, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
-        y: 204, x: 880, width: 210, textAlign: 'center',
+        y: 204, x: 572, width: 210, textAlign: 'center',
         shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
       },
       rpl: {
         fontSize: 28, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
-        y: 297, x: 880, width: 210, textAlign: 'center',
+        y: 297, x: 572, width: 210, textAlign: 'center',
         shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         logoRpl: { url: logoRpl, y: 215, x: 640, width: 80, height: 80 }
       },

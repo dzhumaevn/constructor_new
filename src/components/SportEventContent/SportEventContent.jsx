@@ -43,14 +43,15 @@ const SportEventContent = props => {
       />
       <LineOnCenter params={ lineOnCenter } />
       <SportEquipment params={ sportEquipment } />
-      <Date startDate={ startDate } startTimeValue={ startTime.text } />
-      <Tournament params={ tournament } />
+      <Date startDate={ startDate } startTimeValue={ startTime.text }
+            isOneMatch={ params.isOneMatch } isWebPush={ params.format === 'webPush' } />
+      <Tournament params={ tournament }
+                  isOneMatch={ params.isOneMatch } isWebPush={ params.format === 'webPush' } />
       { lsLogo && <LsLogo params={ lsLogo } /> }
       { coefficients && <Coefficients params={ coefficients } /> }
       { ctaButton && <CtaButton params={ ctaButton } /> }
     </ErrorBoundary>
   );
-}
-;
+};
 
 export default SportEventContent;

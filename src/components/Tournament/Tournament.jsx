@@ -19,7 +19,7 @@ const Tournament = props => {
                            fontStyle={ fontWeight }
                            fontFamily={ fontFamily }
                            fill={ fill }
-                           x={ x }
+                           x={!props.isOneMatch && props.isWebPush ? x + 308 : x  }
                            y={ y }
                            width={ width }
                            wrap='word'

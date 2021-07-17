@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/constructor_new/build/static/css/main.a52d4dac.chunk.css",
-    "main.js": "/constructor_new/build/static/js/main.e394feda.chunk.js",
-    "main.js.map": "/constructor_new/build/static/js/main.e394feda.chunk.js.map",
+    "main.js": "/constructor_new/build/static/js/main.39b22302.chunk.js",
+    "main.js.map": "/constructor_new/build/static/js/main.39b22302.chunk.js.map",
     "runtime-main.js": "/constructor_new/build/static/js/runtime-main.bf933420.js",
     "runtime-main.js.map": "/constructor_new/build/static/js/runtime-main.bf933420.js.map",
     "static/js/2.5186e8b2.chunk.js": "/constructor_new/build/static/js/2.5186e8b2.chunk.js",
@@ -15,7 +15,6 @@
     "static/media/index.scss": "/constructor_new/build/static/media/TypeType_-_TT_Firs_Neue_Regular.45056628.otf",
     "static/media/basketball.d4c8c411.svg": "/constructor_new/build/static/media/basketball.d4c8c411.svg",
     "static/media/boxgloves.8e853352.svg": "/constructor_new/build/static/media/boxgloves.8e853352.svg",
-    "static/media/euro_bg.37e5ac3b.jpg": "/constructor_new/build/static/media/euro_bg.37e5ac3b.jpg",
     "static/media/football.cf4fc7f5.svg": "/constructor_new/build/static/media/football.cf4fc7f5.svg",
     "static/media/hockey_puck.e5079a66.svg": "/constructor_new/build/static/media/hockey_puck.e5079a66.svg",
     "static/media/liga_conf.bd885aef.jpeg": "/constructor_new/build/static/media/liga_conf.bd885aef.jpeg",
@@ -27,12 +26,13 @@
     "static/media/uefa_lc.441fee4d.jpeg": "/constructor_new/build/static/media/uefa_lc.441fee4d.jpeg",
     "static/media/uefa_lc_square.0debc95b.jpeg": "/constructor_new/build/static/media/uefa_lc_square.0debc95b.jpeg",
     "static/media/uefa_le.4c561445.jpeg": "/constructor_new/build/static/media/uefa_le.4c561445.jpeg",
-    "static/media/uefa_le_square.0c8d7c6f.jpeg": "/constructor_new/build/static/media/uefa_le_square.0c8d7c6f.jpeg"
+    "static/media/uefa_le_square.0c8d7c6f.jpeg": "/constructor_new/build/static/media/uefa_le_square.0c8d7c6f.jpeg",
+    "static/media/ufc.2b1909b5.png": "/constructor_new/build/static/media/ufc.2b1909b5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bf933420.js",
     "static/js/2.5186e8b2.chunk.js",
     "static/css/main.a52d4dac.chunk.css",
-    "static/js/main.e394feda.chunk.js"
+    "static/js/main.39b22302.chunk.js"
   ]
 }
