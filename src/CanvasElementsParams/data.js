@@ -444,14 +444,9 @@ const data = {
         y: 340, x: 34, width: 260, textAlign: 'left',
       },
       rpl: {
-        fontSize: 30,
-        fontFamily: 'FirsNeueRegular',
-        fill: '#ffffff',
-        y: 340,
-        x: 34,
-        width: 260,
-        textAlign: 'left',
-        logoRpl: { url: logoRpl, y: 920, x: 85, width: 130, height: 130 }
+        fontSize: 28, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
+        y: 340, x: 100, width: 200, textAlign: 'left',
+        logoRpl: { url: logoRpl, y: 340, x: 34, width: 50, height: 50 }
       },
     },
     lsLogo: { url: lsRect, width: 250, height: 80, y: 62, x: 34 },
@@ -471,7 +466,7 @@ const data = {
       {
         name: {
           text: 'X', fontSize: 28, fontFamily: "FirsNeueRegular",
-          fontWeight: 700, fill: '#ffffff', y: 295, x: 680.5,
+          fontWeight: 700, fill: '#ffffff', y: 295, x: 681.2,
           shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         },
         value: {
@@ -636,7 +631,7 @@ const data = {
       },
       rpl: {
         fontSize: 28, fontFamily: 'FirsNeueRegular', fill: '#ffffff',
-        y: 297, x: 572, width: 210, textAlign: 'center',
+        y: 310, x: 575, width: 210, textAlign: 'center',
         shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
         logoRpl: { url: logoRpl, y: 215, x: 640, width: 80, height: 80 }
       },
