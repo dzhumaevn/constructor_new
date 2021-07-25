@@ -1,4 +1,4 @@
-import { setLoadingStatusActionCreator } from "../loaderReducer/loaderReducer";
+import { setLoadingProgress, setLoadingStatusActionCreator } from "../loaderReducer/loaderReducer";
 import SportEventStringParser from "../../../utils/SportEventStringParser/SportEventStringParser";
 import { ADD_NEW_SPORT_EVENTS } from "./sportEventsReducer";
 import {
@@ -15,6 +15,10 @@ export const addNewSportEvents = (sportEvents) => {
 
     const format = store.getState().format;
     const parsedSportEvents = [];
+    const sportEventsStrings = sportEvents.split('\n');
+
+    const totalSportEvents = format !== 'push' ? sportEventsStrings.length : sportEventsStrings.length * 2;
+    let sportEventRenderedCount = 0;
 
     const fillParsedSportEventsArr = async (format) => {
       for ( const sportEventString of sportEvents.split('\n') ) {
@@ -33,8 +37,14 @@ export const addNewSportEvents = (sportEvents) => {
 
           console.error(e);
         }
+
+        sportEventRenderedCount += 1;
+        dispatch(setLoadingProgress(totalSportEvents, sportEventRenderedCount));
       }
     };
+
+    // reset progress loader
+    dispatch(setLoadingProgress(100, 0));
 
     await fillParsedSportEventsArr(format);
     if ( format === 'push' ) await fillParsedSportEventsArr('webPush');

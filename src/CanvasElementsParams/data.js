@@ -10,6 +10,7 @@ import lsRect from "../assets/images/logo_liga_stavok2.svg";
 import footballSportEquipment from "../assets/images/sports_equipment/football.svg";
 import hockeySportEquipment from "../assets/images/sports_equipment/hockey_puck.svg";
 import basketbolSportEquipment from "../assets/images/sports_equipment/basketball.svg";
+import volejbolSportEquipment from "../assets/images/sports_equipment/volejbol.png";
 import boksSportEquipment from "../assets/images/sports_equipment/boxgloves.svg";
 import ufcSportEquipment from '../assets/images/ufc.png';
 import logoRpl from '../assets/images/logo_rpl.svg';
@@ -33,6 +34,7 @@ const data = {
       default: { fill: "#014b14", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       futbol: { fill: "#014b14", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       basketbol: { fill: "#93621d", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
+      volejbol: { fill: "#138ece", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       boks: { fill: "#014b14", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       ufc: { fill: "#000000", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       xokkej: { fill: "#00A6E0", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
@@ -143,6 +145,7 @@ const data = {
       futbol: { url: footballSportEquipment, width: 330, height: 350, y: 1020, x: 700 },
       xokkej: { url: hockeySportEquipment, width: 230, height: 230, y: 1040, x: 750 },
       basketbol: { url: basketbolSportEquipment, width: 360, height: 320, y: 1020, x: 670 },
+      volejbol: { url: volejbolSportEquipment, width: 320, height: 320, y: 1020, x: 670 },
       boks: { url: boksSportEquipment, width: 360, height: 320, y: 1020, x: 670 },
       ufc: { url: ufcSportEquipment, width: 400, height: 320, y: 1020, x: 670 },
     },
@@ -285,6 +288,7 @@ const data = {
       futbol: { url: footballSportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
+      volejbol: { url: volejbolSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
       ufc: { url: ufcSportEquipment, width: 350, height: 280, y: 630, x: 1500 },
     },
@@ -427,6 +431,7 @@ const data = {
       futbol: { url: footballSportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
+      volejbol: { url: volejbolSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
       ufc: { url: ufcSportEquipment, width: 350, height: 280, y: 630, x: 1500 },
     },
@@ -502,6 +507,7 @@ const data = {
       default: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       futbol: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       basketbol: { fill: "#93621d", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      volejbol: { fill: "#138ece", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       boks: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       ufc: { fill: "#000000", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       xokkej: { fill: "#00A6E0", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
@@ -513,7 +519,7 @@ const data = {
           logo: { width: 200, height: 200, y: 102, x: 274, },
           name: {
             fontSize: 35, fontFamily: "FirsNeueBold", fontWeight: 700, fill: "#ffffff",
-            width: 320, y: 324, x: 214, textAlign: "center", wrap: "word",
+            width: 320, y: 324, x: 210, textAlign: "center", wrap: "word",
           }
         },
         {
@@ -603,6 +609,7 @@ const data = {
       futbol: { visible: false, fill: "#ffffff", width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
       xokkej: { visible: false, fill: '#FF343A', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
       basketbol: { visible: false, fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
+      volejbol: { visible: false, fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
       ufc: { visible: false, fill: '#ffffff', width: 30, height: MARKETINGTV_MAIN_HEIGHT, y: 0, x: 320 },
     },
     sportEquipment: {
@@ -610,18 +617,19 @@ const data = {
       futbol: { url: footballSportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       xokkej: { url: hockeySportEquipment, width: 270, height: 280, y: 630, x: 1500 },
       basketbol: { url: basketbolSportEquipment, width: 290, height: 280, y: 630, x: 1500 },
+      volejbol: { url: volejbolSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
       boks: { url: boksSportEquipment, width: 280, height: 280, y: 630, x: 1500 },
       ufc: { url: ufcSportEquipment, width: 350, height: 280, y: 630, x: 1500 },
     },
     startDate: {
       fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700,
       shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
-      fill: '#ffffff', y: 104, x: 562, width: 230, textAlign: 'center',
+      fill: '#ffffff', y: 100, x: 562, width: 230, textAlign: 'center',
     },
     startTime: {
       fontSize: 34, fontFamily: 'FirsNeueBold', fontWeight: 700,
       shadowColor: 'black', shadowBlur: 4, shadowOffsetX: -2, shadowOffsetY: 2,
-      fill: '#ffffff', y: 104, x: 562, width: 230, textAlign: 'center',
+      fill: '#ffffff', y: 100, x: 562, width: 230, textAlign: 'center',
     },
     tournament: {
       default: {

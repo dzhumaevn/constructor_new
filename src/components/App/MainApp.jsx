@@ -1,6 +1,8 @@
-import { connect } from "react-redux";
+import { connect, Provider } from "react-redux";
 import App from "./App";
 import { setLoadingStatusActionCreator } from "../../redux/reducers/loaderReducer/loaderReducer";
+import store from "../../redux/store";
+import { BrowserRouter } from "react-router-dom";
 
 const mapStateToProps = (state) => {
   return {
@@ -17,4 +19,14 @@ const mapDispatchToProps = (dispatch) => {
 
 const AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
 
-export default AppContainer;
+const MainApp = props => {
+  return (
+    <Provider store={ store }>
+      <BrowserRouter>
+        <AppContainer { ...props } />
+      </BrowserRouter>
+    </Provider>
+  );
+};
+
+export default MainApp;

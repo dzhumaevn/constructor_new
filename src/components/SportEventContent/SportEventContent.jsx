@@ -44,9 +44,13 @@ const SportEventContent = props => {
       <LineOnCenter params={ lineOnCenter } />
       <SportEquipment params={ sportEquipment } />
       <Date startDate={ startDate } startTimeValue={ startTime.text }
-            isOneMatch={ params.isOneMatch } isWebPush={ params.format === 'webPush' } />
+            isOneMatch={ params.isOneMatch } isWebPush={ params.format === 'webPush' }
+            isMarketingtv={ params.format === 'marketingtv' }
+      />
       <Tournament params={ tournament }
-                  isOneMatch={ params.isOneMatch } isWebPush={ params.format === 'webPush' } />
+                  isOneMatch={ params.isOneMatch } isWebPush={ params.format === 'webPush' }
+      />
+
       { lsLogo && <LsLogo params={ lsLogo } /> }
       { coefficients && <Coefficients params={ coefficients } /> }
       { ctaButton && <CtaButton params={ ctaButton } /> }

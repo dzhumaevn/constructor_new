@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from './Loader.module.css';
+import ProgressBar from "./ProgressBar";
 
 const SvgComponent = (props) => {
   return (
@@ -12,10 +13,11 @@ const SvgComponent = (props) => {
   )
 };
 
-const Loader = () => {
+const Loader = ({ progressValue }) => {
   return (
     <div id={ styles.loaderContainer }>
       { SvgComponent({ className: styles.liga }) }
+      <ProgressBar progressValue={ progressValue } />
     </div>
   );
 };

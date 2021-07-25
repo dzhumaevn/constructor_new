@@ -1,0 +1,39 @@
+*
+  box-sizing: border-box
+
+.progress
+  position: relative
+  top: 69.5%
+  left: 50%
+  display: block
+  transform: translate(-50%, -50%) translate3d(0, 0, 0)
+  width: 50%
+  max-width: 100vw
+  height: 16px
+  background: #ffffff
+  overflow: hidden
+
+  .progressBar
+    display: block
+    height: 100%
+    background: linear-gradient(90deg, #008d00, #ffff00 17%, #ffffff 34%, #ff63c3 51%, #008d00 68%, #ffff00 85%, #ffffff)
+    background-size: 300% 100%
+    animation: progress-animation 2s linear infinite
+    transition: 4000ms
+
+.textWrapper
+  display: flex
+  justify-content: space-between
+  width: 50%
+  position: absolute
+  top: 71%
+  left: 50%
+  transform: translateX(-50%)
+  color: #fff
+  margin: 0
+
+@keyframes progress-animation
+  0%
+    background-position: 100%
+  100%
+    background-position: 0

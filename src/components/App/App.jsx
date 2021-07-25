@@ -1,13 +1,13 @@
 import React from "react";
 import StageComponentContainer from "../StageComponent/StageComponentContainer";
-import Loader from "../Loader/Loader";
+import LoaderContainer from "../Loader/LoaderContainer";
 import { NavLink, Route, Switch } from "react-router-dom";
 import './App.css';
 import SportEventsFormContainer from "../SportEventForm/SportEventsFormContainer";
 
 const App = (props) => {
   if ( props.isLoading ) {
-    return <Loader />;
+    return <LoaderContainer />;
   }
 
   return (
@@ -23,7 +23,7 @@ const App = (props) => {
         <Switch>
           <Route path={ process.env.PUBLIC_URL + '/data-input' } component={ SportEventsFormContainer } />
           <Route path={ process.env.PUBLIC_URL + '/rendered-content' } component={ StageComponentContainer } />
-          <Route path={ process.env.PUBLIC_URL } component={ SportEventsFormContainer } />
+          <Route component={ SportEventsFormContainer } />
         </Switch>
       </div>
     </>
