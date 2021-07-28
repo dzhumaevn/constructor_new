@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/constructor_new/build/static/css/main.c14cea97.chunk.css",
-    "main.js": "/constructor_new/build/static/js/main.bfd240f0.chunk.js",
-    "main.js.map": "/constructor_new/build/static/js/main.bfd240f0.chunk.js.map",
-    "runtime-main.js": "/constructor_new/build/static/js/runtime-main.af574053.js",
-    "runtime-main.js.map": "/constructor_new/build/static/js/runtime-main.af574053.js.map",
-    "static/js/2.3da4761c.chunk.js": "/constructor_new/build/static/js/2.3da4761c.chunk.js",
-    "static/js/2.3da4761c.chunk.js.map": "/constructor_new/build/static/js/2.3da4761c.chunk.js.map",
-    "static/js/3.4497d202.chunk.js": "/constructor_new/build/static/js/3.4497d202.chunk.js",
-    "static/js/3.4497d202.chunk.js.map": "/constructor_new/build/static/js/3.4497d202.chunk.js.map",
+    "main.js": "/constructor_new/build/static/js/main.5fc93f7a.chunk.js",
+    "main.js.map": "/constructor_new/build/static/js/main.5fc93f7a.chunk.js.map",
+    "runtime-main.js": "/constructor_new/build/static/js/runtime-main.bf933420.js",
+    "runtime-main.js.map": "/constructor_new/build/static/js/runtime-main.bf933420.js.map",
+    "static/js/2.8479257c.chunk.js": "/constructor_new/build/static/js/2.8479257c.chunk.js",
+    "static/js/2.8479257c.chunk.js.map": "/constructor_new/build/static/js/2.8479257c.chunk.js.map",
+    "static/js/3.45c981eb.chunk.js": "/constructor_new/build/static/js/3.45c981eb.chunk.js",
+    "static/js/3.45c981eb.chunk.js.map": "/constructor_new/build/static/js/3.45c981eb.chunk.js.map",
     "index.html": "/constructor_new/build/index.html",
     "static/css/main.c14cea97.chunk.css.map": "/constructor_new/build/static/css/main.c14cea97.chunk.css.map",
-    "static/js/2.3da4761c.chunk.js.LICENSE.txt": "/constructor_new/build/static/js/2.3da4761c.chunk.js.LICENSE.txt",
+    "static/js/2.8479257c.chunk.js.LICENSE.txt": "/constructor_new/build/static/js/2.8479257c.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/constructor_new/build/static/media/TypeType_-_TT_Firs_Neue_Regular.45056628.otf",
     "static/media/basketball.d4c8c411.svg": "/constructor_new/build/static/media/basketball.d4c8c411.svg",
     "static/media/boxgloves.8e853352.svg": "/constructor_new/build/static/media/boxgloves.8e853352.svg",
@@ -30,9 +30,9 @@
     "static/media/ufc.2b1909b5.png": "/constructor_new/build/static/media/ufc.2b1909b5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.af574053.js",
-    "static/js/2.3da4761c.chunk.js",
+    "static/js/runtime-main.bf933420.js",
+    "static/js/2.8479257c.chunk.js",
     "static/css/main.c14cea97.chunk.css",
-    "static/js/main.bfd240f0.chunk.js"
+    "static/js/main.5fc93f7a.chunk.js"
   ]
 }
