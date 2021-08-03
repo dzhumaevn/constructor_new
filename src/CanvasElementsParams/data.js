@@ -31,11 +31,11 @@ const data = {
   stories: {
     mainParams: { width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT },
     mainBackground: {
-      default: { fill: "#014b14", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
-      futbol: { fill: "#014b14", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
+      default: { fill: "#006237", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
+      futbol: { fill: "#006237", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       basketbol: { fill: "#93621d", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       volejbol: { fill: "#138ece", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
-      boks: { fill: "#014b14", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
+      boks: { fill: "#006237", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       ufc: { fill: "#000000", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
       xokkej: { fill: "#00A6E0", width: STORIES_MAIN_WIDTH, height: STORIES_MAIN_HEIGHT, },
     },
@@ -177,10 +177,10 @@ const data = {
   marketingtv: {
     mainParams: { width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT },
     mainBackground: {
-      default: { fill: "#014b14", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
-      futbol: { fill: "#014b14", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
+      default: { fill: "#006237", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
+      futbol: { fill: "#006237", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
       basketbol: { fill: "#93621d", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
-      boks: { fill: "#014b14", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
+      boks: { fill: "#006237", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
       ufc: { fill: "#000000", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
       xokkej: { fill: "#00A6E0", width: MARKETINGTV_MAIN_WIDTH, height: MARKETINGTV_MAIN_HEIGHT, },
     },
@@ -320,10 +320,10 @@ const data = {
   push: {
     mainParams: { width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT },
     mainBackground: {
-      default: { fill: "#014b14", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
-      futbol: { fill: "#014b14", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      default: { fill: "#006237", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      futbol: { fill: "#006237", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
       basketbol: { fill: "#93621d", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
-      boks: { fill: "#014b14", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
+      boks: { fill: "#006237", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
       ufc: { fill: "#000000", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
       xokkej: { fill: "#00A6E0", width: MOB_PUSH_MAIN_WIDTH, height: MOB_PUSH_MAIN_HEIGHT, },
     },
@@ -504,11 +504,11 @@ const data = {
   webPush: {
     mainParams: { width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT },
     mainBackground: {
-      default: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
-      futbol: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      default: { fill: "#006237", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      futbol: { fill: "#006237", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       basketbol: { fill: "#93621d", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       volejbol: { fill: "#138ece", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
-      boks: { fill: "#014b14", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
+      boks: { fill: "#006237", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       ufc: { fill: "#000000", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
       xokkej: { fill: "#00A6E0", width: WEB_PUSH_MAIN_WIDTH, height: WEB_PUSH_MAIN_HEIGHT, },
     },
